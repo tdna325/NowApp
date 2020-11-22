@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:id="@+id/igsp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/milk1"/>
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/igcheck"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/checkmark"/>
+        <TextView
+            android:id="@+id/tv_tenquan"
+            android:textColor="#000"
+            android:text="XIU Milk - Nguyễn Hoàng"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"/>
+        <TextView
+            android:id="@+id/tv_diachi"
+            android:textColor="#5C5B5B"
+            android:layout_marginTop="30dp"
+            android:text="239 Nguyễn Hoàng, Quận Thanh Khê, Đà Nẵng"
+            android:textSize="13sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv_danhgia"
+            android:textColor="#333232"
+            android:layout_marginTop="55dp"
+            android:text="⭐️ 4.8"
+            android:textSize="13sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv_thoigian"
+            android:textColor="#333232"
+            android:layout_marginTop="55dp"
+            android:layout_marginLeft="170dp"
+            android:text="🕒 37min*2.5km"
+            android:textSize="13sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv_khac"
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_marginTop="80dp"
+            android:text="1 địa điểm khác >"
+            android:textSize="13sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+</LinearLayout>

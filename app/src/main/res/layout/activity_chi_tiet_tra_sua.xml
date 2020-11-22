@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/vien"
+            android:id="@+id/Retop">
+
+            <ImageView
+                android:id="@+id/igchitietmilkback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_back"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="19sp"
+                android:text="Trà Sữa"
+                android:textColor="@android:color/black"/>
+            <ImageView
+                android:id="@+id/igshare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_share_24"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="370dp"/>
+
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/image_poster"
+            android:src="@drawable/milk4"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"/>
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/igcheck"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/checkmark"/>
+            <TextView
+                android:id="@+id/tv_tenquan"
+                android:textColor="#000"
+                android:text="XIU Milk - Nguyễn Hoàng"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"/>
+            <TextView
+                android:id="@+id/tv_diachi"
+                android:textColor="#5C5B5B"
+                android:layout_marginTop="30dp"
+                android:text="239 Nguyễn Hoàng, Quận Thanh Khê, Đà Nẵng"
+                android:textSize="13sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tv_danhgia"
+                android:textColor="#333232"
+                android:layout_marginTop="55dp"
+                android:text="Món Việt  |   Giá ~ 27k     |   ⭐⭐⭐⭐⭐️ 4.8 (999+)"
+                android:textSize="13sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <com.google.android.material.tabs.TabLayout
+            android:layout_alignParentTop="true"
+            android:id="@+id/tab_chitiettrasua"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabIndicatorColor="#DC2323"
+            app:tabIndicatorHeight="2dp"
+            app:tabMode="auto"
+            app:tabSelectedTextColor="#000000"
+            app:tabTextAppearance="@style/TextAppearance.AppCompat.Small">
+         </com.google.android.material.tabs.TabLayout>
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/Vp_chitiettrasua"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>
